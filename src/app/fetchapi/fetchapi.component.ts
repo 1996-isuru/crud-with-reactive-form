@@ -16,6 +16,9 @@ export class FetchapiComponent implements OnInit {
   ngOnInit(): void {
 
     this.todoList = this.appService.getTodos();
+    alert("dd");
+    alert(this.todoList);
   }
+  
 
 }

@@ -6,16 +6,23 @@ import { AppComponent } from './app.component';
 import { StudentListComponent } from './student-list/student-list.component';
 import { FetchapiComponent } from './fetchapi/fetchapi.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { TestComponent } from './test/test.component';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     StudentListComponent,
-    FetchapiComponent
+    FetchapiComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
