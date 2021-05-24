@@ -1,0 +1,16 @@
+<p>custom-pipe-practice works!</p>
+
+<div class="age-container">
+    <label>Enter date of birth: <input #bvalue></label>
+    <button (click)="viewAge(bvalue.value)">view age</button>
+    
+    <h2>{{ "03/03/1996" | age }}</h2>
+    
+    <h2 *ngIf = "dispaly_var"; >{{ temp22 | age}}</h2>
+
+    <h3> {{ "Isuru" | title:'male'  }}</h3>
+    <h3> {{ "kamala" | title:'female'  }}</h3>
+</div>
+
+
+

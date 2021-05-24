@@ -7,5 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent {
   title = 'crud-with-reactive-form';
+  message = "hello";
+  Items = "";
+  AddItem(item){
+    this.Items = item;
+  }
+
+  Item2 ="";
+  AddItem2(bvalue){
+    this.Item2 = bvalue;
+  }
+  
   
 }

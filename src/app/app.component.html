@@ -8,4 +8,29 @@
 
 <!-- <app-fetchapi></app-fetchapi> -->
 
-<app-test></app-test>
+//////////////////********************////////////
+/////////////////@input @output exmple ********///////////////
+
+
+<app-test [parentData]="message" (eventEmitter1)="AddItem($event)" ></app-test>
+<div>item from child component: <b>{{ Items }}</b>
+</div>
+
+//////////////////********************////////////
+/////////////////@input @output exmple ********///////////////
+
+
+
+//////////////////********************////////////
+/////////////////custom pipe example ********///////////////
+<div class="age-con">
+    <app-custom-pipe-practice (eventEmitter2)="AddItem2($event)"></app-custom-pipe-practice>
+    <div>Age of: <b>{{ Item2 }}</b></div>
+</div>
+
+
+
+
+
+//////////////////********************////////////
+/////////////////custom pipe example ********///////////////

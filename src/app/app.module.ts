@@ -8,6 +8,9 @@ import { FetchapiComponent } from './fetchapi/fetchapi.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { TestComponent } from './test/test.component';
+import { AgePipe } from './pipes/age.pipe';
+import { CustomPipePracticeComponent } from './custom-pipe-practice/custom-pipe-practice.component';
+import { TitlePipe } from './pipes/title.pipe';
 
 
 
@@ -17,7 +20,10 @@ import { TestComponent } from './test/test.component';
     AppComponent,
     StudentListComponent,
     FetchapiComponent,
-    TestComponent
+    TestComponent,
+    AgePipe,
+    CustomPipePracticeComponent,
+    TitlePipe
   ],
   imports: [
     BrowserModule,
