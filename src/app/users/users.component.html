@@ -1,0 +1,20 @@
+<p>users works!</p>
+
+<table id="customers">
+    <tr>
+        <label>Enter Users Name: <input #inputTxt [(ngModel)]= serachTxt></label>
+        <button>Add User</button>
+        {{ serachTxt }}
+    </tr>
+    <tr>
+      <th>UserName</th>
+      <th>Gender</th>
+      <th>BOD</th>
+    </tr>
+    <tr *ngFor = "let user of users | textFilter: serachTxt; let i = index">
+      <td>{{ i+1 + " - " }} {{ user.name | title: user.gender }}</td>
+      <td>{{ user.gender }}</td>
+      <td>{{ user.bod }}</td>
+    </tr>
+  </table>
+  

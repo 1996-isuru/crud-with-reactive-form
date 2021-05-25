@@ -11,6 +11,9 @@ import { TestComponent } from './test/test.component';
 import { AgePipe } from './pipes/age.pipe';
 import { CustomPipePracticeComponent } from './custom-pipe-practice/custom-pipe-practice.component';
 import { TitlePipe } from './pipes/title.pipe';
+import { UsersComponent } from './users/users.component';
+import { FormsModule } from '@angular/forms';
+import { TextFilterPipe } from './pipes/text-filter.pipe';
 
 
 
@@ -23,12 +26,15 @@ import { TitlePipe } from './pipes/title.pipe';
     TestComponent,
     AgePipe,
     CustomPipePracticeComponent,
-    TitlePipe
+    TitlePipe,
+    UsersComponent,
+    TextFilterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
