@@ -14,6 +14,7 @@ import { TitlePipe } from './pipes/title.pipe';
 import { UsersComponent } from './users/users.component';
 import { FormsModule } from '@angular/forms';
 import { TextFilterPipe } from './pipes/text-filter.pipe';
+import { ChildComponent } from './child/child.component';
 
 
 
@@ -28,7 +29,8 @@ import { TextFilterPipe } from './pipes/text-filter.pipe';
     CustomPipePracticeComponent,
     TitlePipe,
     UsersComponent,
-    TextFilterPipe
+    TextFilterPipe,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
