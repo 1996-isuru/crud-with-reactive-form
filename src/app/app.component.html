@@ -43,5 +43,11 @@
 ///////////////// ****component hook in action practice****///////////////
 
 <h1>Component Hooks in action</h1>
-<app-child></app-child>
+Message for child component. <input class="text-success" #txt>
+<button class="btn-success" (click)="btnClick(txt.value)">Submit</button>
+<br/><br/>
+<app-child *ngIf=ChildExistance [greeting]="msgChild"></app-child>
+<br>
+<button class="btn btn-danger" (click)="btnDestroyComp()">Destroy Child Component</button>
+<br>
 

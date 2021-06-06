@@ -1,4 +1,4 @@
-import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck, OnChanges, OnDestroy, OnInit } from '@angular/core';
+import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck, Input, OnChanges, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -6,6 +6,8 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
   styleUrls: ['./child.component.css']
 })
 export class ChildComponent implements OnInit,OnChanges,DoCheck,AfterContentChecked,AfterContentInit,AfterViewInit, AfterViewChecked,OnDestroy {
+
+  @Input() public greeting = "Child Greeting";
 
   constructor() {
     console.log("constructor is called.");
@@ -24,23 +26,23 @@ export class ChildComponent implements OnInit,OnChanges,DoCheck,AfterContentChec
   }
 
   ngAfterContentInit(): void {
-    console.log("ngDoCheck is called.");
+    console.log("ngAfterContentInit is called.");
   }
 
   ngAfterContentChecked(): void {
-    console.log("ngDoCheck is called.");
+    console.log("ngAfterContentChecked is called.");
   }
 
   ngAfterViewInit(): void {
-    console.log("ngDoCheck is called.");
+    console.log("ngAfterViewInit is called.");
   }
 
   ngAfterViewChecked(): void {
-    console.log("ngDoCheck is called.");
+    console.log("ngAfterViewChecked is called.");
   }
 
   ngOnDestroy(): void {
-    console.log("ngDoCheck is called.");
+    console.log("ngOnDestroy is called.");
   }
 
 }
