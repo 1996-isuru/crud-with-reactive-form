@@ -15,6 +15,9 @@ import { UsersComponent } from './users/users.component';
 import { FormsModule } from '@angular/forms';
 import { TextFilterPipe } from './pipes/text-filter.pipe';
 import { ChildComponent } from './child/child.component';
+import { TempetateComponent } from './hackerRank/tempetate/tempetate.component';
+import { WeatherComponent } from './hackerRank/weather/weather.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -30,13 +33,16 @@ import { ChildComponent } from './child/child.component';
     TitlePipe,
     UsersComponent,
     TextFilterPipe,
-    ChildComponent
+    ChildComponent,
+    TempetateComponent,
+    WeatherComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
